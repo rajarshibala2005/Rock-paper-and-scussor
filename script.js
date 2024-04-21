@@ -5,6 +5,7 @@ const userScoreAdd = document.getElementById("userScore")
 const compScoreAdd = document.getElementById("compScore")
 const choices = document.querySelectorAll(".choice")
 const msg = document.getElementById("msg")
+const reset = document.querySelector("button")
 
 const generateCompChoice = () => {
     let option = ["rock", "paper", "scissor"]
@@ -62,4 +63,11 @@ choices.forEach((choice) => {
         let userChoice = choice.getAttribute("id")
         playGame(userChoice)
     })
+})
+
+reset.addEventListener("click", () => {
+    userScoreAdd.innerText = userScore = 0
+    compScoreAdd.innerText = compScore = 0
+    msg.innerText = "play your move"
+    msg.style.background = "#000"
 })

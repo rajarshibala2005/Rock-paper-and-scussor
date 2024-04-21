@@ -68,6 +68,14 @@ img {
     border-radius: 2rem;
     transition: all 0.2s ease;
 }
+button {
+    margin-top: 5rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    border: 0;
+    outline: 0;
+}
 
 @media screen and (max-width: 560px) {
     .choices {
