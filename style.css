@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    width: 100vw;
+    background: #212121;
+    color: #fff;
+}
+h1 {
+    background: #000;
+    color: #fff;
+    line-height: 4rem;
+    height: 4rem;
+}
+.choices {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.choice {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.choice:hover {
+    background: #bbbbbb;
+}
+img {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.score-board {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    font-size: 2rem;
+    color: #fff;
+}
+#userScore, #compScore {
+    font-size: 4rem;
+}
+.score  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#msg {
+    display: inline;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background: #000;
+    color: #fff;
+    border: 2px solid rgb(207, 207, 207);
+    border-radius: 2rem;
+    transition: all 0.2s ease;
+}
+
+@media screen and (max-width: 560px) {
+    .choices {
+        gap: 1rem;
+    }
+    .choice {
+        width: 8rem;
+        height: 8rem;
+    }
+    img {
+        width: 7rem;
+        height: 7rem;
+    }
+    #userScore, #compScore {
+        font-size: 3rem;
+    }
+    .score-board {
+        gap: 4rem;
+        font-size: 1.5rem;
+    }
+    #msg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
